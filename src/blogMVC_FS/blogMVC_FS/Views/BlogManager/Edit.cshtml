@@ -1,0 +1,24 @@
+﻿@model ApplicationCore.Entities.Blog
+
+@{
+    ViewData["Title"] = "Edit";
+    ViewData["Action"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Blog</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @Html.Partial("_edit", Model, ViewData)
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
