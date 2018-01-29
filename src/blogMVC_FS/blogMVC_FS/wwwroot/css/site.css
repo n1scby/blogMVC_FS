@@ -33,3 +33,22 @@
         display: none;
     }
 }
+
+.picture-Info{
+    border: 1px solid gray;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+.picture-heading {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.picture-Info p {
+    padding: 1rem;
+}
+
+.brand {color: dodgerblue !important;}
