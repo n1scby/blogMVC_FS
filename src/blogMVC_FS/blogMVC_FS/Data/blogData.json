@@ -1,1 +1,32 @@
-[{"Id":0,"Title":"Blog 1","Author":"me","Summary":"This is a test Blog.  Nothing special.","Content":"This is a test blog. It isn't a true blog entry.  Just a test.  You might want to look at something else now.","Image":"kanab.jpg","AboutImage":"Kanab around sunrise."},{"Id":0,"Title":"Blog 2","Author":"me","Summary":"Another Blog!  Woohoo!  How cool is this?","Content":"This is another test blog.  There isn't much content, but it is still super cool.","Image":"none","AboutImage":"noe"}]
+[
+  {
+    "Id": 0,
+    "Title": "I Quit!",
+    "Author": "me",
+    "Date": "2017-12-01T00:00:00",
+    "Summary": "I left my job to learn something new.",
+    "Content": "<p>If anyone has ever wondered, \"Should I quit my job?\",then I understand.  I wanted to quit for many years but I just wasn't ready.  There are many reasons people stay on. Mine were: </p> <ul> <li>15 minute commute!</li> <li>5 weeks of vacation!</li> <li>Paycheck!</li> <li>Sense of security</li><li>The people - how could I leave the folks that depended on me?</li> <li>It was comfortable.  I knew pretty much what to expect.</li> </ul> <p>   Unfortunately, I didn't like my job though.  I was doing something I had done for many years and I wanted to expand my horizons.  Learn something new.  Something challenging.  Something exciting. So, that lead me to my decision. I needed to quit.  </p> <p>But how could I do it?  I didn't have enough skills in something else to get a job.  Heck, even my company only wanted me for one job. They had no desire to train me in something else, even if I was an awesome employee and there were open positions in the company that I could have filled (they wanted somebody with experience).  What to do? I started looking for classes to take, but couldn't really find anything.  Nothing seemed to fit what I wanted.  Then one day I received an email from some guy named Jeff who ran a local user group.  He was reminding me of the next meetup, and at the very bottom of the email was a note saying new classes were starting for a coding bootcamp.  What?  Really?!? I think this is what I want to do! </p> <p>But, at the time things seemed to be improving a little at work.  We were getting more organized and I was assigned as the lead on a pretty important project.  Maybe I should just hang on and give it a chance.  Maybe things will work out. I worked my tail off on that project - even worked weekends and successfully implemented it.  I must say I did an excellent job.  No complaints from the users.  Then the next project came, and I was back to where I was before.  I didn't want to be doing what I was doing.  I needed out. </p> <p>So, I did it.  I quit.  It was terrifying.  Saying to my boss that I was leaving was one of the harder things I have had to do.  I was worried that everyone would be angry with me.  But they weren't.  They were so supportive and excited about me going to school (and I think maybe a little envious).  What a relief! </p><p>Now I am in class writing a blog post for an assignment.  I am on the path to finally doing what I want to do.  Yay!</p>",
+    "Image": "resign.jpg",
+    "AboutImage": "Just a keyboard with a sticky note."
+  },
+  {
+    "Id": 1,
+    "Title": "Let's Make Some Noise",
+    "Author": "me",
+    "Date": "2017-12-01T00:00:00",
+    "Summary": "How to add some sound on a button click.",
+    "Content": "<p>You may find that you want to add some sound to a website. Why? Various reasons. In my case, I needed it for a game.</p>\r\n<p>First, add an id to the button in the html. </p>\r\n<p>&lt;button id=\"bark-bark\"&gt;Bark!&lt;/button&gt;</p>\r\n<p>Next create some javascript: <br /><img src=\"../../images/jsButton.png\" alt=\"javascript code\" /></p>\r\n<p>And that's all you need to do. Click the button and listen to the sound. Bark! Bark!</p>\r\n<p><button id=\"bark-bark\" class=\"btn btn-dark btn-lg\">Bark!</button></p>",
+    "Image": "rowdy3.jpg",
+    "AboutImage": "The two dogs in the picture are both rescues. They do enjoy play time and can get quite loud during it!"
+  },
+  {
+    "Id": 2,
+    "Title": "Angular React Vue - What to do?",
+    "Author": "me",
+    "Date": "2018-01-03T00:00:00",
+    "Summary": "Preliminary thoughts on the three frameworks.",
+    "Content": "<p>As an assignment for class, we were tasked with doing a little research on Angular, React and Vue, decide which one we'd like to learn and then blog about it.</p>\r\n<p>&nbsp;&nbsp;</p>\r\n<p>Angular seems to be the biggest in terms of size and user base right now.&nbsp; It is big, bulky and can be a bit complicated to use.&nbsp; To me that is a big drawback.&nbsp; On the other hand it is a all in one type of package where you install&nbsp;and get going.&nbsp; It is also very well organized and modular.&nbsp; Angular keeps its html and code separate which seems cleaner to me.&nbsp; Unfortunately, Angular is not backwards compatable.&nbsp; Some releases have actually broken websites and because of this Angular has lost the trust of some users.&nbsp; Angular has a steep learning curve.&nbsp; Part of this is to learn Typescript.&nbsp;&nbsp;</p>\r\n<p>React is less bulky than Angular and uses javascript(ES6) as coding language.&nbsp; React isn't quite as organized as Angular but it is more flexible.&nbsp; It combines HTML with Javascript into something called JSX.&nbsp; Some folks prefer the separation of HTML and javascript.&nbsp;&nbsp;</p>\r\n<p>Vue is the newbie and is gaining popularity because it is smaller and leaner.&nbsp; It is also much easier for a developer to learn.&nbsp; Vue in a way is a combination of Angular and React.&nbsp;&nbsp;Whereas React is one-way binding and Angular uses two way binding, Vue can use both.&nbsp; It uses javascript (ES5 or ES6) and has HTML templates.&nbsp; It too has increased flexibility over Angular.</p>\r\n<p>So, which one would I like to learn?&nbsp; That's easy!&nbsp; Whichever one my employer wants me to learn!&nbsp; But, if I had to choose from the three, I would probably go with Vue as it may be the easiest to wrap my mind around.&nbsp; After that then maybe I would be better prepared to grasp React or Angular.&nbsp;&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "Image": "arv.png",
+    "AboutImage": null
+  }
+]

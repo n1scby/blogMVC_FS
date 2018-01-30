@@ -6,34 +6,40 @@
 
 <div class="row">
     <div>
-    @if (Model.Image != "none" && Model.Image != "")
-    {
-    <img src="~/images/@Model.Image" alt="blog pic" class="img-responsive" />
-    }
+        @if (Model.Image != null)
+        {
+            <img src="~/images/@Model.Image" alt="blog pic" class="img-responsive" />
+        }
     </div>
 </div>
 
 <div class="row">
-   
-    <div class="col-md-8">
-    <h3>@Model.Title</h3>
-    <hr />
-    
-       
-        
-        <p>
-            @Model.Content)
-        </p>
-        </div>
-        <div class="col-md-4">
-          <div class="picture-Info">
-            <div class="picture-heading">
-              <h4>About the Picture</h4>
+
+    <div class="col-md-9">
+        <h2>@Model.Title</h2>
+        <h4>@Model.Date</h4>
+        <hr />
+        @Html.Raw(Model.Content)
+
+    </div>
+    <div class="col-md-3">
+        @if (Model.AboutImage != null)
+        {
+            <div class="picture-Info">
+                <div class="picture-heading">
+                    <h4>About the Picture</h4>
+                </div>
+                <p>@Html.DisplayFor(model => model.AboutImage)</p>
             </div>
-            <p>@Html.DisplayFor(model => model.AboutImage)</p>
-          </div>
-      
-        </div>
-   
+        }
+
+    </div>
+
 </div>
+
+
+@section Scripts {
+    <script src="/js/sound.js"></script>"
+
+}
 

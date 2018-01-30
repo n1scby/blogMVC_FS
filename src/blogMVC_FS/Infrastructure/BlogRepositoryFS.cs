@@ -38,6 +38,7 @@ namespace Infrastructure
 
         public void Add(Blog newBlog)
         {
+            newBlog.Id = _nextNum++;
             _blogList.Add(newBlog);
             SaveFile();
         }
@@ -58,6 +59,8 @@ namespace Infrastructure
             originalBlog.Image = updatedBlog.Image;
             originalBlog.AboutImage = updatedBlog.AboutImage;
             originalBlog.Author = updatedBlog.Author;
+            originalBlog.Date = updatedBlog.Date;
+            originalBlog.Scripts = updatedBlog.Scripts;
             SaveFile();
         }
 

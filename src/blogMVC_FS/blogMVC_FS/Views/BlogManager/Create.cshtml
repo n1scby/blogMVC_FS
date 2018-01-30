@@ -10,8 +10,8 @@
 <h4>Blog</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
-       @Html.Partial("_Edit", Model, ViewData)
+    <div class="col-md-6">
+        @Html.Partial("_Edit", Model, ViewData)
     </div>
 </div>
 
@@ -22,3 +22,6 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script src="/js/tinymce/tinymce.min.js"></script>
+<script>tinymce.init({ selector: 'textarea' });</script>
