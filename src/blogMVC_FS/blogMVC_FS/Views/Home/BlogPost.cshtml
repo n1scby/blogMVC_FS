@@ -4,15 +4,19 @@
     ViewData["Title"] = "BlogPost";
 }
 
-<div>
+<div class="row">
+    <div>
     @if (Model.Image != "none" && Model.Image != "")
     {
-    <img src="~/images/@Model.Image" alt="Visual Studio" class="img-responsive" />
+    <img src="~/images/@Model.Image" alt="blog pic" class="img-responsive" />
     }
+    </div>
 </div>
 
-<div>
-    <h4>@Model.Title</h4>
+<div class="row">
+   
+    <div class="col-md-8">
+    <h3>@Model.Title</h3>
     <hr />
     
        
@@ -20,11 +24,16 @@
         <p>
             @Model.Content)
         </p>
-        
-        <div class="picture-Info">
-            <div class="picture-heading">About the Picture</div>
-            <p>@Html.DisplayNameFor(model => model.AboutImage)</p>
         </div>
-        
+        <div class="col-md-4">
+          <div class="picture-Info">
+            <div class="picture-heading">
+              <h4>About the Picture</h4>
+            </div>
+            <p>@Html.DisplayFor(model => model.AboutImage)</p>
+          </div>
+      
+        </div>
+   
 </div>
 
