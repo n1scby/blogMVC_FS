@@ -3,7 +3,10 @@
 @{
     ViewData["Title"] = "BlogPost";
 }
-
+@if (Model.CSS != null)
+{
+@section cssSection { <link rel="stylesheet" href="~/css/@Model.CSS"> }
+}
 <div class="row">
     <div>
         @if (Model.Image != null)

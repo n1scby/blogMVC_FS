@@ -15,6 +15,7 @@ namespace ApplicationCore.Entities
         public string Image { get; set; }
         public string AboutImage { get; set; }
         public string Scripts { get; set; }
+        public string CSS { get; set; }
 
     }
 }

@@ -61,6 +61,7 @@ namespace Infrastructure
             originalBlog.Author = updatedBlog.Author;
             originalBlog.Date = updatedBlog.Date;
             originalBlog.Scripts = updatedBlog.Scripts;
+            originalBlog.CSS = updatedBlog.CSS;
             SaveFile();
         }
 
