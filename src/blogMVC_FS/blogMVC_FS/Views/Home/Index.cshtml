@@ -19,7 +19,7 @@
         @foreach (var item in Model)
         {
             <div>
-                <h2>@Html.ActionLink(item.Title, "BlogPost", new { id = item.Id })</h2>
+                <h2>@Html.ActionLink(item.Title, "BlogPost", new { id = item.Id }, new { @class = "blog-Title" })</h2>
                 <p>@item.Summary</p>
                 <hr/>
             </div>
