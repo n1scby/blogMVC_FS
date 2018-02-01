@@ -58,3 +58,30 @@
 .blog-Title:hover {text-decoration:none;
                     color:dodgerblue;
 }
+
+@media(min-width: 992px) {
+    #random-Links {
+        margin-top: 4rem;
+        border: 1px solid lightgray;
+        padding: 0 1rem 1rem 1rem;
+        display: block;
+    }
+    #random-Links-small {
+        display: none;
+    }
+}
+
+@media(max-width: 991px) {
+    #random-Links {
+        display: none;
+    }
+    #random-Links-small{
+        display:block;
+
+    }
+}
+
+
+
+
+

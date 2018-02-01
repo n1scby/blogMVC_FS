@@ -8,33 +8,54 @@
 </div>
 <div class="row">
 
-    <div class="col-md-4">
+    <article class="col-md-4">
         <h1>Welcome!</h1>
-        <p>Welcome to nBlog. Currently, I am going back to school to learn web development.
-        I plan on posting some things I have learned here as well as some other items of interest. 
-        Hopefully, you will be able to find something useful, interesting or maybe even inspirational here.</p>
+        <p>
+            Welcome to nBlog. Currently, I am going back to school to learn web development.
+            I plan on posting some things I have learned here as well as some other items of interest.
+            Hopefully, you will be able to find something useful, interesting or maybe even inspirational here.
+        </p>
 
-    </div>
+        <nav id="random-Links">
+            <h3>Random Links</h3>
+            <ul class="nav">
+                <li><a class="nav-link" href="http://jeffa.tech">Jeff Ammons - coding guru</a></li>
+                <li><a class="nav-link" href="http://codecareeracademy.com">Code Career Academy</a></li>
+                <li><a class="nav-link" href="http://petfinder.com">Find a new buddy!</a></li>
+                <li><a class="nav-link" href="http://atlutd.com">Check out the latest <strong>Atlanta United</strong> news!</a></li>
+            </ul>
+        </nav>
+
+    </article>
     <div class="col-md-5">
         @foreach (var item in Model)
         {
-            <div>
+            <article>
                 <h2>@Html.ActionLink(item.Title, "BlogPost", new { id = item.Id }, new { @class = "blog-Title" })</h2>
                 <p>@item.Summary</p>
-                <hr/>
-            </div>
-           
+                <hr />
+            </article>
+
         }
 
 
     </div>
-    <div class="col-md-3">
+    <aside class="col-md-3">
         <div class="picture-Info">
             <div class="picture-heading">
-            <h4>About the Picture</h4>
+                <h4>About the Picture</h4>
             </div>
-            <p>For those wondering about the picture, it was taken in the Grand Tetons around 2012. If you are ever in the area, try the<a href="http://www.tetonhikingtrails.com/inspiration-point.htm\"> hike!</a></p>
+            <p>For those wondering about the picture, it was taken in the Grand Tetons around 2012. If you are ever in the area, try the<a href="http://www.tetonhikingtrails.com/inspiration-point.htm"> hike!</a></p>
         </div>
 
-    </div>
+    </aside>
+    <nav id="random-Links-small">
+        <h3>Random Links</h3>
+        <ul class="nav">
+            <li><a class="nav-link" href="http://jeffa.tech">Jeff Ammons - coding guru</a></li>
+            <li><a class="nav-link" href="http://codecareeracademy.com">Code Career Academy</a></li>
+            <li><a class="nav-link" href="http://petfinder.com">Find a new buddy!</a></li>
+            <li><a class="nav-link" href="http://atlutd.com">Check out the latest <strong>Atlanta United</strong> news!</a></li>
+        </ul>
+    </nav>
 </div>
