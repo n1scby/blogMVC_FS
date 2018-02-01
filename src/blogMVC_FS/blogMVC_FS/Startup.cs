@@ -47,6 +47,11 @@ namespace blogMVC_FS
 
             services.AddMvc();
             services.AddScoped<IBlogRepository, BlogRepositoryFS>();
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", policy => policy.RequireClaim("Administrator"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

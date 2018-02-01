@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace blogMVC_FS.Controllers
 {
-    [Authorize]
+    [Authorize(Policy = "AdminOnly")]
     public class BlogManagerController : Controller
     {
         private readonly IBlogRepository _blogRepo;
@@ -21,11 +21,13 @@ namespace blogMVC_FS.Controllers
         }
 
         // GET: BlogManager
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View(_blogRepo.GetBlogList());
         }
 
+        [AllowAnonymous]
         // GET: BlogManager/Details/5
         public ActionResult Details(int id)
         {
