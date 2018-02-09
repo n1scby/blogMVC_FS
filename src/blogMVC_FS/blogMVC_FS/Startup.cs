@@ -13,6 +13,7 @@ using blogMVC_FS.Models;
 using blogMVC_FS.Services;
 using ApplicationCore.Interfaces;
 using Infrastructure;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace blogMVC_FS
 {
@@ -69,6 +70,12 @@ namespace blogMVC_FS
             }
 
             app.UseStaticFiles();
+
+            // Adding for Google redirect for https
+            var options = new RewriteOptions()
+             .AddRedirectToHttps();
+            app.UseRewriter(options);
+
 
             app.UseAuthentication();
 
