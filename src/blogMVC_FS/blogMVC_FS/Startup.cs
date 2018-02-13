@@ -47,15 +47,15 @@ namespace blogMVC_FS
 
 
             services.AddMvc();
-            services.AddScoped<IBlogRepository, BlogRepositoryFS>();
+              services.AddScoped<IBlogRepository, BlogRepositoryFS>();
 
-            // To pass the connection string use the lambda function and create a new instance of the repo
+          //  To pass the connection string use the lambda function and create a new instance of the repo
             //services.AddScoped<IBlogRepository, BlogRepositoryADO>(connectionADO =>
             //{
             //    string connString = Configuration.GetConnectionString("DefaultConnection");
             //    return new BlogRepositoryADO(connString);
             //});
-            
+
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("AdminOnly", policy => policy.RequireClaim("Administrator"));

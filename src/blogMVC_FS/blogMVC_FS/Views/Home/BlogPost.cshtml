@@ -3,13 +3,13 @@
 @{
     ViewData["Title"] = "BlogPost";
 }
-@if (Model.CSS != null)
+@if (Model.CSS != null && Model.CSS != "")
 {
 @section cssSection { <link rel="stylesheet" href="~/css/@Model.CSS"> }
 }
 <div class="row">
     <div>
-        @if (Model.Image != null)
+        @if (Model.Image != null && Model.Image != "")
         {
             <img src="~/images/@Model.Image" alt="blog pic" class="img-responsive site-image" />
         }
@@ -26,7 +26,7 @@
 
     </div>
     <div class="col-md-3">
-        @if (Model.AboutImage != null)
+        @if (Model.AboutImage != null  && Model.AboutImage != "")
         {
             <div class="picture-Info">
                 <div class="picture-heading">
@@ -41,8 +41,10 @@
 </div>
 
 
+@if (Model.Scripts != null && Model.Scripts != "")
+{
 @section Scripts {
-    <script src="/js/sound.js"></script>"
-
+    <script src="/js/@Model.Scripts"></script>"
+}
 }
 
